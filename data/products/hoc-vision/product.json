@@ -1,0 +1,84 @@
+{
+  "name": "hoc-vision",
+  "pieces": [
+    {
+      "key": "bottom",
+      "name": "Mảnh 1 · DƯỚI",
+      "type_id": 0,
+      "is_top": false,
+      "draw_color_bgr": [
+        70,
+        230,
+        90
+      ],
+      "params": {
+        "method": "color",
+        "blur": 9,
+        "threshold": 35,
+        "invert": false,
+        "morph_kernel": 7,
+        "morph_iterations": 2,
+        "min_area_percent": 3.0,
+        "color_tolerance": 15.0,
+        "merge_fragments": false
+      },
+      "reference_lab": null,
+      "tcp_offset_local": [
+        0.0,
+        0.0
+      ],
+      "design_x": 0.0,
+      "design_y": 0.0,
+      "design_angle": 0.0,
+      "template_file": null,
+      "mask_file": null
+    },
+    {
+      "key": "top",
+      "name": "Mảnh 2 · TRÊN (gắp)",
+      "type_id": 1,
+      "is_top": true,
+      "draw_color_bgr": [
+        255,
+        180,
+        30
+      ],
+      "params": {
+        "method": "color",
+        "blur": 9,
+        "threshold": 35,
+        "invert": false,
+        "morph_kernel": 7,
+        "morph_iterations": 2,
+        "min_area_percent": 3.0,
+        "color_tolerance": 15.0,
+        "merge_fragments": false
+      },
+      "reference_lab": null,
+      "tcp_offset_local": [
+        0.0,
+        0.0
+      ],
+      "design_x": 0.0,
+      "design_y": 0.0,
+      "design_angle": 0.0,
+      "template_file": null,
+      "mask_file": null
+    }
+  ],
+  "station": {
+    "port": 6001,
+    "allow_lan": true,
+    "angle_sign": -1.0,
+    "angle_offset": 0.0,
+    "mm_per_pixel": 0.25,
+    "origin_u": 0.0,
+    "origin_v": 0.0,
+    "algorithm": "auto",
+    "scale_tolerance_percent": 25.0,
+    "max_result_age_ms": 1500,
+    "homography": null
+  },
+  "source_image_file": null,
+  "background_file": null
+}

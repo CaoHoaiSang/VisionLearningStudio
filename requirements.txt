@@ -1,0 +1,5 @@
+opencv-python==4.10.0.84
+numpy>=1.26,<3
+pypylon>=3.0
+customtkinter>=5.2.2,<6
+Pillow>=10,<12

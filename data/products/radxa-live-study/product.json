@@ -1,0 +1,102 @@
+{
+  "name": "radxa-live-study",
+  "pieces": [
+    {
+      "key": "bottom",
+      "name": "Mảnh 1 · DƯỚI",
+      "type_id": 0,
+      "is_top": false,
+      "draw_color_bgr": [
+        70,
+        230,
+        90
+      ],
+      "params": {
+        "method": "color",
+        "blur": 15,
+        "threshold": 143,
+        "invert": true,
+        "morph_kernel": 12,
+        "morph_iterations": 2,
+        "min_area_percent": 5.425531914893617,
+        "color_tolerance": 15.0,
+        "merge_fragments": false,
+        "tol_l": 70.0,
+        "tol_ab": 19.0,
+        "auto_threshold": false,
+        "bg_threshold": 40,
+        "pattern_threshold": 30
+      },
+      "reference_lab": [
+        18.0,
+        122.0,
+        126.0
+      ],
+      "tcp_offset_local": [
+        -2.5311784071000716,
+        -1.8788239031245837
+      ],
+      "design_x": 0,
+      "design_y": 120,
+      "design_angle": 5.5,
+      "template_file": "bottom_template.png",
+      "mask_file": "bottom_mask.png"
+    },
+    {
+      "key": "top",
+      "name": "Mảnh 2 · TRÊN (gắp)",
+      "type_id": 1,
+      "is_top": true,
+      "draw_color_bgr": [
+        255,
+        180,
+        30
+      ],
+      "params": {
+        "method": "color",
+        "blur": 21,
+        "threshold": 130,
+        "invert": true,
+        "morph_kernel": 15,
+        "morph_iterations": 2,
+        "min_area_percent": 5.0,
+        "color_tolerance": 15.0,
+        "merge_fragments": false,
+        "tol_l": 27.98936170212766,
+        "tol_ab": 7.638297872340425,
+        "auto_threshold": true,
+        "pattern_threshold": 30,
+        "bg_threshold": 20
+      },
+      "reference_lab": [
+        79.0,
+        107.0,
+        135.0
+      ],
+      "tcp_offset_local": [
+        -4.5672990493830525,
+        1.8642510827227454
+      ],
+      "design_x": 2.0079260237780714,
+      "design_y": 115.93130779392327,
+      "design_angle": 0.0,
+      "template_file": "top_template.png",
+      "mask_file": "top_mask.png"
+    }
+  ],
+  "station": {
+    "port": 6001,
+    "allow_lan": true,
+    "angle_sign": -1.0,
+    "angle_offset": 0.0,
+    "mm_per_pixel": 0.25,
+    "origin_u": 0.0,
+    "origin_v": 0.0,
+    "algorithm": "deform",
+    "scale_tolerance_percent": 25.0,
+    "max_result_age_ms": 1500,
+    "homography": null
+  },
+  "source_image_file": "design_source.jpg",
+  "background_file": "background.png"
+}
